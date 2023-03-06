@@ -20,10 +20,10 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.7.1
-	go.etcd.io/etcd/api/v3 v3.5.4
-	go.etcd.io/etcd/client/pkg/v3 v3.5.4
-	go.etcd.io/etcd/client/v3 v3.5.4
-	go.etcd.io/etcd/server/v3 v3.5.4
+	go.etcd.io/etcd/api/v3 v3.6.0-alpha.0
+	go.etcd.io/etcd/client/pkg/v3 v3.6.0-alpha.0
+	go.etcd.io/etcd/client/v3 v3.6.0-alpha.0
+	go.etcd.io/etcd/server/v3 v3.6.0-alpha.0
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.32.0
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.32.0
 	go.opentelemetry.io/otel v1.7.0
@@ -62,12 +62,12 @@ require (
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
 	github.com/felixge/httpsnoop v1.0.2 // indirect
-	github.com/form3tech-oss/jwt-go v3.2.3+incompatible // indirect
 	github.com/go-logr/logr v1.2.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/jsonpointer v0.19.5 // indirect
 	github.com/go-openapi/jsonreference v0.19.5 // indirect
 	github.com/go-openapi/swag v0.19.14 // indirect
+	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/btree v1.0.1 // indirect
@@ -91,21 +91,21 @@ require (
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.32.1 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
-	github.com/sirupsen/logrus v1.7.0 // indirect
+	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/soheilhy/cmux v0.1.5 // indirect
 	github.com/spf13/cobra v1.4.0 // indirect
 	github.com/tmc/grpc-websocket-proxy v0.0.0-20201229170055-e5319fda7802 // indirect
 	github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2 // indirect
 	go.etcd.io/bbolt v1.3.6 // indirect
-	go.etcd.io/etcd/client/v2 v2.305.4 // indirect
-	go.etcd.io/etcd/pkg/v3 v3.5.4 // indirect
-	go.etcd.io/etcd/raft/v3 v3.5.4 // indirect
+	go.etcd.io/etcd/client/v2 v2.306.0-alpha.0 // indirect
+	go.etcd.io/etcd/pkg/v3 v3.6.0-alpha.0 // indirect
+	go.etcd.io/etcd/raft/v3 v3.6.0-alpha.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/internal/retry v1.7.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.7.0 // indirect
 	go.opentelemetry.io/otel/metric v0.30.0 // indirect
 	go.opentelemetry.io/proto/otlp v0.16.0 // indirect
 	go.uber.org/atomic v1.7.0 // indirect
-	go.uber.org/multierr v1.6.0 // indirect
+	go.uber.org/multierr v1.7.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8 // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
@@ -119,7 +119,8 @@ require (
 )
 
 replace (
-	go.etcd.io/etcd/server/v3 v3.5.4 => github.com/acorn-io/etcd/server/v3 v3.5.4-ot-1
+	go.etcd.io/etcd/client/pkg/v3 v3.6.0-alpha.0 => github.com/acorn-io/etcd/client/pkg/v3 v3.6.0-ot-1
+	go.etcd.io/etcd/server/v3 v3.6.0-alpha.0 => github.com/acorn-io/etcd/server/v3 v3.6.0-ot-1
 	k8s.io/api => k8s.io/api v0.25.2
 	k8s.io/apimachinery => k8s.io/apimachinery v0.25.2
 	k8s.io/client-go => k8s.io/client-go v0.25.2
